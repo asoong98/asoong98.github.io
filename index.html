@@ -159,12 +159,13 @@
 								<br><img src="images/ng.png" width="" height="85" />
 								<img src="images/mdp.png" width="" height="85" />
 								<br>&emsp;&emsp;This student team project is a Northrop Grumman sponsored Multidisciplinary Design Project at the University of Michigan. Over the last few years, Northrop Grumman has proven their ability to send Mission Extension Vehicles (MEVs) into space to dock with existing GEO satellites. After docking, the MEV is able to provide propulsion and attitude control to satellites.
-								<span class="image main"><img src="images/MEV.jpg"></span>
+								<br><img src="images/MEV.jpg" width="750">
 								<br>&emsp;&emsp;The student team, Team Orbit, was tasked to take this a step further by researching and implementing a way to augment GEO satellites on-orbit. The team decided to tackle the issue of failed or degrading solar panels by (1) creating a CONOPs of an autonomous on-orbit attachment procedure, (2) prototyping the attachment mechanism, (3) and creating an autonomous vision system capable of localizing a pre-determined attachment location.
 								<br>&emsp;&emsp;My job on the team is a Software engineer, responsible for creating the autonomous vision system in C++ for localizing a pre-determined attachment point on the satellite yoke. The camera I'm using is the Intel RealSense L515 Lidar camera, capable of simultaneous RGB and Lidar streams. The vision algorithm takes advantage of coordinate transformations and a priori CAD of the satellite we're operating on. 
 								<br>&emsp;&emsp;Given the CAD model of the target satellite, we're able to transfer the 3D information into a point cloud through SolidWorks. The vision algorithm then uses RANSAC and Iterative Closest Points for point cloud registration to find a transformation matrix that best matches the model point cloud of the satellite to the environment point cloud that the camera sees during operation. 
+								<img src="images/pointcloudstuff.png" width="750">
 								<br>&emsp;&emsp;Since we've pre-determined the attachment location in the model coordinate system, we can localize the attachment location with respect to the camera with the transformation matrix.
-								<span class="image main"><img src="images/pointcloudstuff.png"></span>
+								<img src="images/coordinatetransformation.png" width="750">
 								<br>&emsp;&emsp;In addition to engineering work, I was also responsible for creating the validation and testing plans for the vision system. These testing plans will include verification of the vision algorithm on a full-scale mockup of the satellite yoke under various lighting conditions, such as back-lighting and partial occlusion of the satellite yoke. I've also contributed to the overall development of the CONOPS. Given that I have both hardware and software experience, I'm in a advantageous position to clearly understand the different parts of a project and how they should best interact with each other.
 								<p></p>
 								<h3 class="major">Basil Leaf Automation</h3>
